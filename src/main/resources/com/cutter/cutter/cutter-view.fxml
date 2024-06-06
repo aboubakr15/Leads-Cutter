@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="689.0" prefWidth="1217.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cutter.cutter.CutterViewController">
+    <right>
+        <VBox prefHeight="456.0" prefWidth="295.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Leads Cutter" textFill="#25a755">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+
+                <Label prefHeight="31.0" prefWidth="349.0" text="Save base workbook N in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="baseWorkbookDirN" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectBaseWorkbookDirNBtn" mnemonicParsing="false" onAction="#onSelectBaseWorkbookDirN" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+
+                <Label prefHeight="31.0" prefWidth="331.0" text="Save base workbook X in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="baseWorkbookDirX" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectBaseWorkbookDirXBtn" mnemonicParsing="false" onAction="#onSelectBaseWorkbookDirX" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                </HBox>
+                <Label prefHeight="31.0" prefWidth="331.0" text="Save result files 1 in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="saveResultDir1" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectResultDir1Btn" mnemonicParsing="false" onAction="#onSelectResultDir1" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                </HBox>
+
+                <Label prefHeight="31.0" prefWidth="331.0" text="Save result files 2 in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="saveResultDir2" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectResultDir2Btn" mnemonicParsing="false" onAction="#onSelectResultDir2" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                </HBox>
+
+                <Label prefHeight="31.0" prefWidth="331.0" text="Save result files 3 in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="saveResultDir3" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectResultDir3Btn" mnemonicParsing="false" onAction="#onSelectResultDir3" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                </HBox>
+
+                <Label prefHeight="31.0" prefWidth="331.0" text="Save emails in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="emailsDir" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectEmailsDirBtn" mnemonicParsing="false" onAction="#onSelectEmailDir" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                </HBox>
+
+                <Label prefHeight="31.0" prefWidth="331.0" text="Save inventory in:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="295.0">
+                    <children>
+                        <TextField fx:id="inventoryDir" disable="true" prefHeight="31.0" prefWidth="238.0" />
+                        <Button fx:id="selectInventoryDirBtn" mnemonicParsing="false" onAction="#onSelectInventoryDir" prefHeight="31.0" prefWidth="66.0" text="..." />
+                    </children>
+                </HBox>
+
+                <!-- Similar structure for other directories... -->
+
+                <Button fx:id="cutButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCut" prefHeight="59.0" prefWidth="295.0" style="-fx-background-color: #25a755;" text="Cut" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="60.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets left="20.0" right="20.0" />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+    <left>
+        <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="689.0" prefWidth="851.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="fileNameColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="516.0" text="File name" />
+                <TableColumn fx:id="easternLeadsColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="103.0" text="Eastern leads" />
+                <TableColumn fx:id="pacificLeadsColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="124.0" text="Pacific leads" />
+                <TableColumn fx:id="centralLeadsColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="107.0" text="Central leads" />
+            </columns>
+        </TableView>
+    </left>
+</BorderPane>
